@@ -2,7 +2,7 @@
  
 import * as React from 'react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
+import { Button } from '../ui/button'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
  
 interface Slide {
@@ -17,9 +17,7 @@ const slides: Slide[] = [
   {
     title: "Our e-Publications Have Global Reach",
     subtitle: "Connecting Kashmir's Craft Insights with the World",
-    image: "/placeholder.svg",
-    mobileImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20004049-oeAScPxS0UkVBGZfltCZOWMlamnOGo.png",
-    reportImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20004049-oeAScPxS0UkVBGZfltCZOWMlamnOGo.png"
+    image: "../assets/footerImages/comp.png"
   },
   {
     title: "Reviving Heritage, Connecting Artisans",
@@ -29,17 +27,17 @@ const slides: Slide[] = [
   {
     title: "Empowering Local Artisans",
     subtitle: "Bridging Tradition with Modern Markets",
-    image: "/placeholder.svg?height=1080&width=1920"
+    image: "../assets/footerImages/comp.png?height=1080&width=1920"
   },
   {
     title: "Sustainable Craftsmanship",
     subtitle: "Preserving Skills for Future Generations",
-    image: "/placeholder.svg?height=1080&width=1920"
+    image: "../assets/footerImages/comp.png?height=1080&width=1920"
   },
   {
     title: "Global Impact, Local Touch",
     subtitle: "Bringing Kashmir's Art to the World Stage",
-    image: "/placeholder.svg?height=1080&width=1920"
+    image: "../assets/footerImages/comp.png?height=1080&width=1920"
   }
 ]
  
