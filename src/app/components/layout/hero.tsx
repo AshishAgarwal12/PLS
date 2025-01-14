@@ -17,27 +17,27 @@ const slides: Slide[] = [
   {
     title: "Our e-Publications Have Global Reach",
     subtitle: "Connecting Kashmir's Craft Insights with the World",
-    image: "../assets/footerImages/comp.png"
+    image: "/assets/footerImages/comp.png"
   },
   {
     title: "Reviving Heritage, Connecting Artisans",
     subtitle: "Foundation's Journey to Build the Largest Craft Network",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20004106-Soc3oziSmPvYLFzqDKB5dxYu4HnIri.png"
+    image: "/assets/footerImages/comp.png?height=1080&width=1920"
   },
   {
     title: "Empowering Local Artisans",
     subtitle: "Bridging Tradition with Modern Markets",
-    image: "../assets/footerImages/comp.png?height=1080&width=1920"
+    image: "/assets/footerImages/comp.png?height=1080&width=1920"
   },
   {
     title: "Sustainable Craftsmanship",
     subtitle: "Preserving Skills for Future Generations",
-    image: "../assets/footerImages/comp.png?height=1080&width=1920"
+    image: "/assets/footerImages/comp.png?height=1080&width=1920"
   },
   {
     title: "Global Impact, Local Touch",
     subtitle: "Bringing Kashmir's Art to the World Stage",
-    image: "../assets/footerImages/comp.png?height=1080&width=1920"
+    image: "/assets/footerImages/comp.png?height=1080&width=1920"
   }
 ]
  
