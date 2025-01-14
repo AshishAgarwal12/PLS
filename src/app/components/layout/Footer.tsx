@@ -1,3 +1,21 @@
+enum QuickLinks {
+  HOME = "HOME",
+  PARTNERSHIP_PROCESS = "PARTNERSHIP PROCESS",
+  PARTNERSHIP = "PARTNERSHIP",
+  REGISTRATION = "REGISTRATION",
+  APPLICATION_STATUS = "APPLICATION STATUS",
+  BOOK_APPOINTMENT = "BOOK APPOINTMENT",
+  CONTACT_US = "CONTACT US",
+}
+
+enum OurPartnership {
+  E_COMMERCE = "E-Commerce",
+  BRICK_AND_MORTAR = "Brick And Mortar",
+  FRANCHISE = "Franchise",
+  IMPORT_EXPORT = "Import Export",
+  CONSIGNMENT = "Consignment",
+  EXHIBITION = "Exhibition",
+}
 
 export default function Footer() {
   return (
@@ -29,41 +47,13 @@ export default function Footer() {
           <div className="col-span-6 md:col-span-2">
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:underline">
-                  HOME
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  PARTNERSHIP PROCESS
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  PARTNERSHIP
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  REGISTRATION
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  APPLICATION STATUS
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  BOOK APPOINTMENT
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  CONTACT US
-                </a>
-              </li>
+              {Object.values(QuickLinks).map((link, index) => (
+                <li key={index}>
+                  <a href="#" className="hover:underline">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -71,36 +61,13 @@ export default function Footer() {
           <div className="col-span-6 md:col-span-2">
             <h4 className="text-lg font-semibold mb-4">Our Partnership</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:underline">
-                  E-Commerce
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Brick And Mortar
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Franchise
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Import Export
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Consignment
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Exhibition
-                </a>
-              </li>
+              {Object.values(OurPartnership).map((link, index) => (
+                <li key={index}>
+                  <a href="#" className="hover:underline">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
