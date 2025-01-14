@@ -2,9 +2,11 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, ChevronRight } from 'lucide-react'
+import { useState } from 'react'
 
 export default function Header() {
+  const [isStaffingHovered, setIsStaffingHovered] = useState(false)
   return (
     <header className="border-b border-gray-200">
       <div className="container mx-auto px-4">
@@ -53,7 +55,27 @@ export default function Header() {
                       </p>
                       <h4 className="font-semibold mb-2 text-gray-900">BY INDUSTRY</h4>
                       <ul className="space-y-2 text-sm">
-                        <li><Link href="/industry/staffing" className="text-gray-600 hover:text-green-600">Staffing</Link></li>
+                      <li 
+                          className="relative"
+                          onMouseEnter={() => setIsStaffingHovered(true)}
+                          onMouseLeave={() => setIsStaffingHovered(false)}
+                        >
+                          <Link href="/industry/staffing" className="text-gray-600 hover:text-green-600 flex items-center justify-between">
+                            Staffing
+                            <ChevronRight className="h-4 w-4" />
+                          </Link>
+                          {isStaffingHovered && (
+                            <div className="absolute left-full top-0 bg-white shadow-lg p-4 w-64 ml-2">
+                              <h5 className="font-semibold mb-2 text-gray-900">Staffing Solutions</h5>
+                              <ul className="space-y-2">
+                                <li><Link href="/staffing/temp" className="text-gray-600 hover:text-green-600">Temporary Staffing</Link></li>
+                                <li><Link href="/staffing/permanent" className="text-gray-600 hover:text-green-600">Permanent Placement</Link></li>
+                                <li><Link href="/staffing/contract" className="text-gray-600 hover:text-green-600">Contract Staffing</Link></li>
+                                <li><Link href="/staffing/executive" className="text-gray-600 hover:text-green-600">Executive Search</Link></li>
+                              </ul>
+                            </div>
+                          )}
+                        </li>
                         <li><Link href="/industry/healthcare" className="text-gray-600 hover:text-green-600">Healthcare</Link></li>
                         <li><Link href="/industry/nonprofits" className="text-gray-600 hover:text-green-600">Nonprofits</Link></li>
                         <li><Link href="/industry/small-businesses" className="text-gray-600 hover:text-green-600">For Small Businesses</Link></li>
