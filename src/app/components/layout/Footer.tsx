@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 enum QuickLinks {
   HOME = "HOME",
   PARTNERSHIP_PROCESS = "PARTNERSHIP PROCESS",
@@ -25,11 +27,17 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="col-span-12 md:col-span-5">
             <div className="flex items-center mb-4">
-              <img
-                src="/assets/footerImages/logo.webp"
-                alt="Connect Portal Logo"
-                className="h-full w-full"
-              />
+             
+              <div className="w-full h-full">
+                <Image
+                  src="/assets/footerImages/logo.webp"
+                  alt="Connect Portal Logo"
+                  layout="responsive" // Responsive layout for flexible size
+                  className="object-contain"
+                  width={100} // Aspect ratio control, not directly the size
+                  height={100} // Aspect ratio control, not directly the size
+                />
+              </div>
             </div>
             <p className="text-sm leading-relaxed flex-wrap">
               Our platform streamlines & forges robust business partnerships,
@@ -202,11 +210,13 @@ export default function Footer() {
                 "/assets/footerImages/comp3.png",
                 "/assets/footerImages/comp4.png",
               ].map((logo, index) => (
-                <img
+                <Image
                   key={index}
                   src={logo}
                   alt={`Logo ${index + 1}`}
                   className="h-16 w-16 md:h-24 md:w-24 max-w-full object-contain"
+                  width={64} // 16 * 4 (tailwind 16 scale = 64px)
+                  height={64} // 16 * 4 (tailwind 16 scale = 64px)
                 />
               ))}
             </div>

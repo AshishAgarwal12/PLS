@@ -51,7 +51,7 @@ export default function Header() {
                     <div className="flex-1">
                       <h3 className="font-semibold mb-2 text-gray-900">BACKGROUND CHECKS</h3>
                       <p className="text-sm text-gray-600 mb-4">
-                        Manage your employment screening program easily and more efficiently with GoodHire's award-winning advanced platform.
+                        Manage your employment screening program easily and more efficiently with GoodHires award-winning advanced platform.
                       </p>
                       <h4 className="font-semibold mb-2 text-gray-900">BY INDUSTRY</h4>
                       <ul className="space-y-2 text-sm">
@@ -133,7 +133,7 @@ export default function Header() {
                     </p>
                     <ul className="space-y-2 text-sm">
                       <li><Link href="/learn/background-check-time" className="text-gray-600 hover:text-green-600">How Long Does a Background Check Take?</Link></li>
-                      <li><Link href="/learn/failed-background-checks" className="text-gray-600 hover:text-green-600">What Are "Failed" Background Checks?</Link></li>
+                      <li><Link href="/learn/failed-background-checks" className="text-gray-600 hover:text-green-600">What Are Failed Background Checks?</Link></li>
                       <li><Link href="/learn/ssn-trace" className="text-gray-600 hover:text-green-600">What Is An SSN Trace?</Link></li>
                       <li><Link href="/learn/federal-background-checks" className="text-gray-600 hover:text-green-600">Guide to Federal Background Checks</Link></li>
                       <li><Link href="/learn/run-background-check" className="text-gray-600 hover:text-green-600">How To Run A Background Check For Employment</Link></li>
