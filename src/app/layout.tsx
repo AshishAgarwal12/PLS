@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <Header />
         <HeroSlider></HeroSlider>
-        <Navbarcards></Navbarcards>
+        {/* <Navbarcards></Navbarcards> */}
         <Footer />
       </body>
     </html>
